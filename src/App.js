@@ -2,13 +2,14 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/homepage/homepage";
+import ShopPage from "./pages/shop/shop";
 
 function App() {
   return (
     <div>
       <Routes>
         <Route path="/" exact element={<HomePage />} />
-        <Route path="hats" element={<HatsPage />} />
+        <Route path="shop" element={<ShopPage />} />
         <Route path="sneakers" element={<Sneakers />} />
       </Routes>
     </div>
@@ -16,14 +17,6 @@ function App() {
 }
 
 export default App;
-
-const HatsPage = () => {
-  return (
-    <div>
-      <h1>Hats Page</h1>
-    </div>
-  );
-};
 
 const Sneakers = () => {
   return (
