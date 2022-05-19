@@ -30,7 +30,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header currentUser={this.state.currentUser} />
         <Routes>
           <Route path="/" exact element={<HomePage />} />
           <Route path="shop" element={<ShopPage />} />
