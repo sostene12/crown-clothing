@@ -38,7 +38,7 @@ class SignUp extends React.Component{
 
     handleChange = e =>{
         const { name,value } = e.target;
-        this.setState({[name]:value});
+        this.setState({[name]:value},() => console.log(this.state));
     }
 
     render(){
@@ -47,10 +47,14 @@ class SignUp extends React.Component{
             <h2 className='title'>I do not have an account</h2>
             <span>Sign up with your email and password</span>
             <form className='sign-up-form' onSubmit={this.handleSubmit}>
-            <FormInput type="text" name="displayName" label="Display Name" value={displayName} onChange={this.handleChange} required/>
-            <FormInput type="email" name="Email" label="Email" value={email} onChange={this.handleChange} required/>
-            <FormInput type="password" name="password" label="Password" value={password} onChange={this.handleChange} required/>
-            <FormInput type="password" name="comfirmpassword" label="Comfirm Password" value={comfirmPassword} onChange={this.handleChange} required/>
+            <FormInput type="text" name="displayName" 
+            label="Display Name" value={displayName} onChange={this.handleChange} required/>
+            <FormInput type="email" name="email" 
+            label="Email" value={email} onChange={this.handleChange} required/>
+            <FormInput type="password" name="password" 
+            label="Password" value={password} onChange={this.handleChange} required/>
+            <FormInput type="password" name="comfirmPassword" 
+            label="Comfirm Password" value={comfirmPassword} onChange={this.handleChange} required/>
             <CustomButton type="submit">SIGN UP</CustomButton>
             </form>
             
