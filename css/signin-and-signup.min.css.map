@@ -1,6 +1,10 @@
 {
     "version": 3,
+<<<<<<< HEAD
     "mappings": "",
+=======
+    "mappings": "AAAA,AAAA,oBAAoB,AAAA,CAChB,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,YAAY,CAChC",
+>>>>>>> signin/signup
     "sources": [
         "../src/pages/sign-and-signup/signin-and-signup.scss"
     ],
