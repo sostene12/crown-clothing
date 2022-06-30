@@ -1,4 +1,4 @@
-import CollectionItem from '../collection-item/commection-item';
+import CollectionItem from '../collection-item/collection-item';
 import './collection-preview.scss';
 
 const CollectionPreview = ({title,items}) => {
